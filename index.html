@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- head
+
+        Purpose:
+        - Title used here shows up in the browser tab
+        - Link to the favicon (small image that appears in the browser tab)
+        - Link to the CSS file (used to style the webpage)
+
+        When To Modify:
+        - [X] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) (favicon)
+        - [ ] Any time after
+        -->
+        <title>Splatoon Party</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body >
+        <!-- navbar
+
+        Purpose:
+        - Navigation bar that allows users to jump to different sections of the webpage
+        - Also holds buttons for user settings (dark mode, reduce motion)
+
+        When To Modify:
+        - [X] Project 4 (REQUIRED FEATURE)
+        - [ ] Project 5 (REQUIRED FEATURE) 
+        - [ ] Project 8 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        -->
+        <div class="navbar">
+            <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#schedule">Schedules</a></li>
+            <li><a href="#links">Links</a></li>
+            <li> <button id="theme-button"> Toggle Dark Mode</button></li>
+            </ul>
+        </div>
+
+        <!-- headings
+
+        Purpose:
+        - Main header section of the webpage
+        - Contains the title, subtitle, image, and key buttons for the webpage
+
+        When To Modify:
+        - [X] Project 2 (REQUIRED FEATURE) 
+        - [X] Project 3 (REQUIRED FEATURE) 
+        - [X] Project 4 (REQUIRED FEATURE) 
+        - [ ] Any time after
+        -->
+
+        <div class="header-container revealable" id="home">
+            <div class="header-item">
+                 <img id="header-img" src="./img/41-416350_whats-splatoon-inkling-squid-splatoon-2.png"/>
+            </div>
+            <div class="header-item">
+                <h1>Splatoon Party</h1>
+                <h2> Join the fun! Everyone's waiting!</h2>
+                <h3>Battle for the prize!</h3>
+                <button class="header-button" type="button">Sign Up</button>
+                <button class="header-button" type="button">View Schedule</button>
+            </div>
+        </div>
+        
+
+        
+        <!-- about
+
+        Purpose:
+        - Section for general info about the event
+        - Contains a video, description, and key points about the event
+
+        When To Modify:
+        - [X] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <div class="revealable">
+            <h2 id="about">About the Event</h2>
+            <p>Players can sign up to take part in a Splatoon 3 tournament. Teams of players will compete in Turf War and Ranked battle modes. Players of all skill levels are welcome to join! A lot of fun awaits!</p>
+         </div>
+        <div class="revealable">
+            <h3>What to Expect</h3>
+            <h4>Tag Line</h4>
+            <ul>
+                <li> <b>Join a team:</b> <i>Players will form teams of 4 to compete.</i></li>
+                <li> <b>Battle it out:</b> <i>Teams will compete with each other in various game modes.</i></li>
+                <li> <b>Get prizes:</b> <i>The top teams will win prizes!</i></li>
+            </ul>
+        </div>
+        <!-- schedule
+
+        Purpose:
+        - Section for specific info about the event's schedule
+        - Contains images and descriptions of each activity
+
+        When To Modify:
+        - [X] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2 class="revealable" id="schedule">Event Schedule</h2>
+        <div class="revealable">
+            <img alt="A group of green inklings and pink octolings" src="img/splatoon_2_inklings.webp" width="750px"/>
+            <h3>Event Activity 1</h3>
+            <p>Players will join teams and battle to reach the top!</p>
+        </div>
+
+        <div class="revealable">
+            <img alt="Splatoon characters playing video games on a couch" src="img/S2_Splatfest_Official_Promo_Hero_vs_Villain.jpg" width="750px"/>
+            <h3>Event Activity 2</h3>
+            <p>Make new friends and build your skills!</p>
+        </div>
+
+        <div class="revealable">
+            <img alt="Image description" src="img/splatoon3-prize-1.png" width = 750px/>
+            <h3>Event Activity 3</h3>
+            <p>Win amazing prizes!</p>
+        </div>
+
+        <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
+        <div class = "revealable" id="rsvp">
+            <h2>RSVP</h2>
+            <div class="rsvp-container">
+                <div class="rsvp-para">
+                    <!-- info goes here -->
+                    Come play splatoon with us!! Improve your skills, make new friends, and have a chances to win great prizes! Top prizes include $100 Nintendo Eshop gift gards and more!
+                </div>
+                <div class="rsvp-participants">
+                    <p>🎟️ DJ HyperFresh from Inkopolis is joining the party!</p>
+                    <p>🎟️ MC Princess from Inkopolis is joining the party!</p>
+                    <p>🎟️ IAN BGM from Splatsville is joining the party!.</p>
+                </div>
+                <div id="participants" class="participants">
+                    <!-- RSVPs go here -->
+                </div>
+                <div id="rsvp-count"> <!-- Stretch goal unit 6-->
+                    <p>
+                        "⭐ 3 people have RSVP'd to this event!"  
+                    </p>
+                </div>
+            </div>
+
+        <!--- Sign RSVP Form --->
+        <div class="form-container revealable">
+            <form id="rsvp-form" title="rsvp-form">
+                <!-- form inputs go here -->
+                <label>Name:</label>
+                <input id="name">
+                <label>Email:</label>
+                <input id="email">
+                <label>Nintendo ID:</label>
+                <input id="nintendo">
+            
+            </form>
+            <!-- Submit button -->
+            <button id="rsvp-button">Submit RSVP</button>
+        </div>      
+        </div>
+
+        <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] --> 
+        <!-- success modal
+
+Purpose:
+- Modal that appears when a user successfully signs up for the event
+- Contains a personalized message and image
+
+When To Modify:
+- [ ] Project 9 (REQUIRED FEATURE)
+- [ ] Project 9 (STRETCH FEATURE) 
+- [ ] Any time after
+--> 
+
+        <div id="success-modal" class="modal">
+            <div class="modal-container">
+                <div id="modal-item">
+                    <p id="modal-text"></p>
+                </div>
+                <div id="modal-item">
+                    <img id="modal-img" src="img/Pink_Squid_Cushion.png">
+                </div>
+            </div>
+        </div>
+        <!-- links
+
+        Purpose:
+        - Links to other resources related to the event
+
+        When To Modify:
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2 class="revealable" id="links">Links</h2>
+
+        <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+        <a class="block revealable" href="https://splatoonwiki.org/wiki/Main_Page">
+            <article>
+                <h3>Inkipedia</h3>
+                <p>Information about Splatoon</p>
+            </article>
+        </a>
+                
+            <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+            <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
+            <script src="index.js"></script>
+    </body>
+</html>
